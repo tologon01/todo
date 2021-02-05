@@ -23,4 +23,5 @@ urlpatterns = [
     path("", homepage, name = "home"),
     path("test/", test, name = "test"),
     path("go/", product, name = "page"),
+    path("test2/", second)
 ]
