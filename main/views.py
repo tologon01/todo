@@ -10,4 +10,3 @@ def product(request):
 
 def second(request):
     return HttpResponse("hello test2")
-
