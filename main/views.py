@@ -1,9 +1,11 @@
 from django.shortcuts import render, HttpResponse
-
+from .models import ToDo
 
 
 def test(request):
-    return render(request, "index.html")
+    todo_list = ToDo.objects.all() 
+
+    return render(request, "index.html", {"todo_list": todo_list} )
 
 def product(request):
     return HttpResponse("This is my first page")

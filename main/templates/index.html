@@ -132,6 +132,11 @@
             </div>
         </div>
     </section>
+
+    {% for todo in todo_list %}
+       <h2>{{todo.text}} - {{todo.create_at}}</h2> 
+        
+    {% endfor %}
 </body>
 
 </html>
